@@ -1,0 +1,12 @@
+1                  ! mode (1, 2, or 3)
+1.0  0.02          ! amu, tolc
+obs_surf.grv   ! data file
+gzinv3d.mtx       ! mtx file
+VALUE 1.e-5     ! initial model
+VALUE 0.               ! reference model
+null              ! active cells
+VALUE -10.0               ! bounds
+VALUE 10.0
+null
+SMOOTH_MOD    !
+null               ! 3D weighting

@@ -1,0 +1,180 @@
+
+Parallelized with OpenMP.  # of threads:  8
+
+GRAV3D - Version 5.0 :  GZINV3D
+
+Developed by University of British Columbia 
+Geophysical Inversion Facility  (UBC-GIF)
+
+(C) Copyright 1992 - 2013, UBC-GIF,
+Department of Earth and Ocean Sciences, UBC
+http://gif.eos.ubc.ca/
+
+Distributed by:
+Mira Geoscience Ltd.
+
+
+Reading input file: gzinv3d.inp
+
+----------------------------------------------------------------
+
+1                  ! mode (1, 2, or 3)
+1.0  0.02          ! amu, tolc
+obs_surf.grv   ! data file
+gzinv3d.mtx       ! mtx file
+VALUE 1.e-5     ! initial model
+VALUE 0.               ! reference model
+null              ! active cells
+VALUE -10.0               ! bounds
+VALUE 10.0
+null
+SMOOTH_MOD    !
+null               ! 3D weighting
+
+----------------------------------------------------------------
+
+
+GZINV3D started on: 11/13/2018  01:45:47
+
+
+Running with the following parameters:
+
+          Input file: gzinv3d.inp
+                mode: 1  (fixed target misfit)
+             chifact:   1.00    
+   Observations file: obs_surf.grv
+    Sensitivity file: gzinv3d.mtx
+       Initial Model: VALUE 1.e-5
+     Reference Model: VALUE 0.
+                mref: [NOT] in spatial derivatives
+   Active cell model: null
+   3D weighting file: null
+
+
+                    # of data:     4096
+
+                   # of cells: 32 x 32 x 32
+             total # of cells:   32768
+        # of cells below topo:   32768
+
+   reference model was set to:  0.0000E+00
+     initial model was set to:  1.0000E-05
+      lower bounds was set to: -1.0000E+01
+      upper bounds was set to:  1.0000E+01
+
+
+----------------------------------------
+ alpha values:
+     alpha (s, e, n, z):  1.000E-04  1.00      1.00      1.00    
+ corresponding length scales:
+             Le, Ln, Lz:   100.      100.      100.    
+----------------------------------------
+
+      init cpu time:   0:00:00.09
+ 
+     initial misfit:  2.643573E+09
+ target data misfit:  4.096000E+03
+
+          Iteration:   1
+               beta:  3.257292E+03
+        data misfit:  1.634279E+09
+      beta cpu time:   0:00:00.11
+
+          Iteration:   2
+               beta:  1.628646E+03
+        data misfit:  1.215500E+09
+      beta cpu time:   0:00:00.08
+
+          Iteration:   3
+               beta:  8.143231E+02
+        data misfit:  8.168469E+08
+      beta cpu time:   0:00:00.09
+
+          Iteration:   4
+               beta:  4.071616E+02
+        data misfit:  4.991943E+08
+      beta cpu time:   0:00:00.10
+
+          Iteration:   5
+               beta:  2.035808E+02
+        data misfit:  2.731791E+08
+      beta cpu time:   0:00:00.14
+
+          Iteration:   6
+               beta:  1.017904E+02
+        data misfit:  1.285379E+08
+      beta cpu time:   0:00:00.16
+
+          Iteration:   7
+               beta:  5.089519E+01
+        data misfit:  5.102844E+07
+      beta cpu time:   0:00:00.15
+
+          Iteration:   8
+               beta:  2.544760E+01
+        data misfit:  1.745603E+07
+      beta cpu time:   0:00:00.15
+
+          Iteration:   9
+               beta:  1.272380E+01
+        data misfit:  5.358028E+06
+      beta cpu time:   0:00:00.18
+
+          Iteration:  10
+               beta:  6.361899E+00
+        data misfit:  1.539850E+06
+      beta cpu time:   0:00:00.21
+
+          Iteration:  11
+               beta:  3.180950E+00
+        data misfit:  4.328803E+05
+      beta cpu time:   0:00:00.36
+
+          Iteration:  12
+               beta:  1.590475E+00
+        data misfit:  1.262955E+05
+      beta cpu time:   0:00:00.35
+
+          Iteration:  13
+               beta:  7.952374E-01
+        data misfit:  4.224124E+04
+      beta cpu time:   0:00:00.53
+
+          Iteration:  14
+               beta:  3.976187E-01
+        data misfit:  1.818282E+04
+      beta cpu time:   0:00:00.75
+
+          Iteration:  15
+               beta:  1.988094E-01
+        data misfit:  1.020462E+04
+      beta cpu time:   0:00:01.14
+
+          Iteration:  16
+               beta:  9.940468E-02
+        data misfit:  6.820184E+03
+      beta cpu time:   0:00:01.72
+
+          Iteration:  17
+               beta:  5.671452E-02
+        data misfit:  5.280519E+03
+      beta cpu time:   0:00:02.26
+
+          Iteration:  18
+               beta:  4.179278E-02
+        data misfit:  4.653667E+03
+      beta cpu time:   0:00:02.79
+
+          Iteration:  19
+               beta:  3.343422E-02
+        data misfit:  4.252103E+03
+      beta cpu time:   0:00:03.24
+
+   Target misfit reached.
+
+
+
+     TOTAL cpu time:   0:00:14.66
+
+GZINV3D ended on: 11/13/2018  01:46:02
+

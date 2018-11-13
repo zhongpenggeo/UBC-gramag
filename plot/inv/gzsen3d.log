@@ -1,0 +1,69 @@
+
+Parallelized with OpenMP.  # of threads:  8
+
+GRAV3D - Version 5.0 :  GZSEN3D
+
+Developed by University of British Columbia 
+Geophysical Inversion Facility  (UBC-GIF)
+
+(C) Copyright 1992 - 2013, UBC-GIF,
+Department of Earth and Ocean Sciences, UBC
+http://gif.eos.ubc.ca/
+
+Distributed by:
+Mira Geoscience Ltd.
+
+
+Reading input file: gzsen3d.inp
+
+----------------------------------------------------------------
+
+../input/mesh32x32x32     ! mesh file
+gra.txt   ! data file
+null      ! topo.dat
+depth_weight.txt
+daub4         ! wvlt
+null
+0
+
+----------------------------------------------------------------
+
+
+GZSEN3D started on: 11/13/2018  00:57:12
+
+with the following parameters:
+
+          Input file: gzsen3d.inp
+   Observations file: gra.txt
+           Mesh file: ../input/mesh32x32x32
+     Topography file: null
+ Wavelet compression: daub4
+ Wavelet   threshold: default
+ 
+                   # of cells: 32 x 32 x 32
+             total # of cells:   32768
+        # of cells below topo:   32768
+
+           # of surface  data:    4096
+           # of borehole data:       0
+ 
+          weighting was read from file: depth_weight.txt
+      init cpu time:   0:00:00.39
+
+    Sensitivity of surface  data:
+
+ At the relative  accuracy of:  5.0000E-02
+ Estimated relative threshold:  6.3506E-03
+ Predicted compression  ratio:  2.8371E+01
+
+
+          Number of non-zeros:   4371532
+          Compression   ratio:  3.0703E+01
+
+      achieved relative error:  2.7471E-03
+
+      sens cpu time:   0:00:02.83
+     TOTAL cpu time:   0:00:10.65
+
+GZSEN3D ended on: 11/13/2018  00:57:22
+

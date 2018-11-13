@@ -1,0 +1,58 @@
+
+Parallelized with OpenMP.  # of threads:  8
+
+MAG3D - Version 5.0 :  PFWEIGHT
+
+Developed by University of British Columbia 
+Geophysical Inversion Facility  (UBC-GIF)
+
+(C) Copyright 1992 - 2013, UBC-GIF,
+Department of Earth and Ocean Sciences, UBC
+http://gif.eos.ubc.ca/
+
+Distributed by:
+Mira Geoscience Ltd.
+
+
+Reading input file: pfweight.inp
+
+----------------------------------------------------------------
+
+GRAV
+../input/mesh32x32x32
+gra.txt
+null
+1
+null
+
+----------------------------------------------------------------
+
+
+PFWEIGHT started on: 11/13/2018  00:56:01
+
+with the following parameters:
+
+          Input file: pfweight.inp
+   Observations file: gra.txt
+           Mesh file: ../input/mesh32x32x32
+     Topography file: null
+     depth weighting
+             exp, z0: null
+ 
+                   # of cells: 32 x 32 x 32
+             total # of cells:   32768
+        # of cells below topo:   32768
+
+    # of surface  data:      4096
+    # of borehole data:         0
+ 
+   Average terrain clearance: 1.00000E+00
+ 
+    default depth weighting parameters:
+     pwr =     2.00
+    znot =  1467.84
+ 
+     TOTAL cpu time:   0:00:00.91
+
+PFWEIGHT ended on: 11/13/2018  00:56:02
+
